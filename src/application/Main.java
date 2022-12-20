@@ -28,24 +28,18 @@ public class Main {
 		System.out.println("Check-out date");
 		checkout = sdf.parse(sc.next());
 
-		// solução muito ruim
-		// Date now = new Date;
-		// if ( checkIn.before(now) || checkOut.before(now)){
-			// System.out.println("Error in reservation")
-		//} else if(!checkOut.after(checkIn)){
-			//system.out.println("Error in reservation")
-		//}else{
-			// reservation.updateDate(checkin, checkout);
-			// System.out.println("Rservation" + reservation);
-		//}
+		solução muito ruim
+		Date now = new Date;
+		if ( checkIn.before(now) || checkOut.before(now)){
+			System.out.println("Error in reservation")
+		} else if(!checkOut.after(checkIn)){
+			system.out.println("Error in reservation")
+		}else{
+			reservation.updateDate(checkin, checkout);
+			System.out.println("Rservation" + reservation);
+		}
 
 
-
-
-
-
-		reservation.updateDate(checkin, checkout);
-		System.out.println("Rservation" + reservation);
 	}
 
 
